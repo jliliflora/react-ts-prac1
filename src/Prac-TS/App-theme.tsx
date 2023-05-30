@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-function App() {
+function AppTheme() {
   const Container = styled.div`
     background-color: ${(props) => props.theme.bgColor};
   `;
@@ -16,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppTheme;
