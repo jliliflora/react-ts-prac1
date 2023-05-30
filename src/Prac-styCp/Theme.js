@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   background-color: ${(props) => props.theme.backgroundColor};
 `;
 
-function App() {
+function Theme() {
   return (
     <Wrapper>
       <Title>Hello</Title>
@@ -21,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default Theme;
