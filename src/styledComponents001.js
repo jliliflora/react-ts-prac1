@@ -17,6 +17,7 @@ const Btn = styled.button`
   border: 0;
   border-radius: 15px;
 `;
+// 모두 다 같은 attribute를 가져야 할때 => .attrs()
 const Input = styled.input.attrs({ required: true })`
   background-color: tomato;
 `;
@@ -35,6 +36,6 @@ function styCp001() {
     </Father>
   );
 }
-//as : 링크로써 사용하고 싶다고 명시할 수 있는 props
+//as : 링크로써 사용하고 싶다고 명시할 수 있는 props, 컴포넌트가 렌더링 되는 방식을 바꿔주는거임!!
 
 export default styCp001;

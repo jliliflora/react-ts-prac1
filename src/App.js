@@ -22,7 +22,7 @@ const rotationAnimation = keyframes`
   }
 `;
 
-//tag name에 의존하고 싶지 않을때
+//tag name(h1, span, p...등등)에 의존하고 싶지 않을때
 const Emoji = styled.span`
   font-size: 40px;
 `;
@@ -35,6 +35,7 @@ const Box = styled.div`
   justify-content: center;
   align-items: center;
   animation: ${rotationAnimation} 1s linear infinite;
+  // 부모 컴포넌트에 의해서 자식 컴포넌트가 style을 갖는 법
   // span {
   //   font-sixe: 40px;
   //   &:hover {
@@ -45,8 +46,7 @@ const Box = styled.div`
   //   }
   // }
   ${Emoji}:hover {
-      font-size: 60px;
-    }
+    font-size: 60px;
   }
 `;
 
@@ -61,6 +61,5 @@ function App() {
     </Wrapper>
   );
 }
-//as : 링크로써 사용하고 싶다고 명시할 수 있는 props
 
 export default App;
